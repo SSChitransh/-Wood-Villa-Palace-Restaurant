@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#16251f" />
+  <meta name="description" content="Discover Wood Villa Palace & Restaurant in Chadyara, Mandi, Himachal Pradesh. Enquire directly about your stay, dining, room availability and directions." />
+  <meta property="og:title" content="Wood Villa Palace & Restaurant | Mandi, Himachal Pradesh" />
+  <meta property="og:description" content="A comfortable stay and a welcoming dining stop in Mandi. Contact us directly for availability and enquiries." />
+  <meta property="og:type" content="website" />
+  <title>Wood Villa Palace & Restaurant | Mandi, Himachal Pradesh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --pine: #16251f;
+      --pine-2: #20372d;
+      --pine-3: #314a3d;
+      --cream: #f7f5ef;
+      --paper: #fffefa;
+      --ink: #202923;
+      --muted: #6c756e;
+      --gold: #c4a66d;
+      --gold-dark: #8e7040;
+      --line: rgba(32, 41, 35, .12);
+      --shadow: 0 22px 60px rgba(14, 27, 20, .12);
+      --radius: 22px;
+      --sans: 'DM Sans', sans-serif;
+      --serif: 'Playfair Display', Georgia, serif;
+      --max: 1180px;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; scroll-padding-top: 90px; }
+    body { margin: 0; background: var(--cream); color: var(--ink); font-family: var(--sans); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    body.menu-open { overflow: hidden; }
+    a { color: inherit; text-decoration: none; }
+    img { display: block; max-width: 100%; }
+    button, input, select, textarea { font: inherit; }
+    button, a { -webkit-tap-highlight-color: transparent; }
+    .container { width: min(var(--max), calc(100% - 44px)); margin-inline: auto; }
+    .eyebrow { display: inline-flex; align-items: center; gap: 10px; margin: 0 0 18px; color: var(--gold-dark); font-size: .72rem; font-weight: 700; letter-spacing: .18em; line-height: 1.4; text-transform: uppercase; }
+    .eyebrow::before { content: ''; width: 26px; height: 1px; background: currentColor; }
+    h1, h2, h3, p { margin-top: 0; }
+    h1, h2, h3 { font-family: var(--serif); font-weight: 500; line-height: 1.1; letter-spacing: -.025em; }
+    h1 { max-width: 670px; margin-bottom: 22px; font-size: clamp(3rem, 6.2vw, 5.9rem); }
+    h2 { margin-bottom: 18px; font-size: clamp(2.25rem, 4vw, 3.75rem); }
+    h3 { margin-bottom: 11px; font-size: 1.55rem; }
+    .lead { max-width: 560px; color: var(--muted); font-size: clamp(1rem, 1.3vw, 1.12rem); }
+    .section { padding: 108px 0; }
+    .section-heading { max-width: 720px; margin-bottom: 44px; }
+    .section-heading p:last-child { margin-bottom: 0; }
+    .btn { display: inline-flex; justify-content: center; align-items: center; gap: 10px; min-height: 52px; padding: 14px 22px; border: 1px solid transparent; border-radius: 999px; cursor: pointer; font-size: .88rem; font-weight: 700; transition: transform .2s ease, background .2s ease, color .2s ease, border-color .2s ease; }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-dark { background: var(--pine); color: #fff; }
+    .btn-dark:hover { background: var(--pine-3); }
+    .btn-gold { background: var(--gold); color: var(--pine); }
+    .btn-gold:hover { background: #d0b681; }
+    .btn-outline { border-color: rgba(255,255,255,.35); color: #fff; background: rgba(255,255,255,.04); }
+    .btn-outline:hover { background: rgba(255,255,255,.12); }
+    .btn-outline-dark { border-color: var(--line); color: var(--pine); background: transparent; }
+    .btn-outline-dark:hover { border-color: var(--pine); background: rgba(22,37,31,.04); }
+    .btn svg { width: 17px; height: 17px; flex: 0 0 auto; }
+    /* Header */
+    .site-header { position: sticky; z-index: 50; top: 0; background: rgba(247,245,239,.94); border-bottom: 1px solid rgba(32,41,35,.07); backdrop-filter: blur(16px); }
+    .nav-wrap { display: flex; align-items: center; justify-content: space-between; min-height: 82px; gap: 22px; }
+    .brand { display: inline-flex; align-items: center; gap: 12px; min-width: 220px; }
+    .brand-mark { display: grid; place-items: center; width: 44px; height: 44px; flex: 0 0 auto; border: 1px solid rgba(196,166,109,.65); border-radius: 50%; color: var(--gold-dark); }
+    .brand-mark svg { width: 25px; height: 25px; }
+    .brand-copy { display: flex; flex-direction: column; gap: 2px; line-height: 1.1; }
+    .brand-name { font-family: var(--serif); font-size: 1.03rem; font-weight: 700; letter-spacing: -.015em; }
+    .brand-sub { color: var(--muted); font-size: .61rem; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    .nav-links { display: flex; align-items: center; justify-content: center; gap: clamp(16px, 2.1vw, 30px); }
+    .nav-links a { color: #49534c; font-size: .82rem; font-weight: 600; transition: color .2s ease; }
+    .nav-links a:hover { color: var(--gold-dark); }
+    .nav-cta { min-height: 44px; padding: 10px 18px; font-size: .8rem; white-space: nowrap; }
+    .menu-toggle { display: none; place-items: center; width: 44px; height: 44px; border: 1px solid var(--line); border-radius: 50%; background: transparent; color: var(--pine); cursor: pointer; }
+    .menu-toggle svg { width: 21px; height: 21px; }
+    /* Hero */
+    .hero { position: relative; overflow: hidden; padding: 46px 0 38px; background: var(--pine); color: white; }
+    .hero::before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 20% 10%, rgba(196,166,109,.12), transparent 36%), linear-gradient(110deg, #16251f 0%, #16251f 43%, rgba(22,37,31,.91) 56%, rgba(22,37,31,.35) 100%); z-index: 1; pointer-events: none; }
+    .hero-photo { position: absolute; inset: 0 0 0 42%; background-image: linear-gradient(90deg, var(--pine) 0%, rgba(22,37,31,.35) 34%, rgba(22,37,31,.1) 100%), url('https://images.unsplash.com/photo-1510798831971-661eb04b3739?auto=format&fit=crop&w=1900&q=88'); background-size: cover; background-position: center; opacity: .74; }
+    .hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: minmax(0,1.05fr) minmax(330px,.72fr); align-items: center; gap: clamp(30px, 5vw, 80px); min-height: 570px; padding: 58px 0 76px; }
+    .hero-copy .eyebrow { color: #ddc99f; }
+    .hero h1 { color: #fff; }
+    .hero h1 em { color: #d4bd8d; font-weight: 500; }
+    .hero-copy .lead { max-width: 495px; color: rgba(255,255,255,.76); }
+    .hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 30px; }
+    .hero-rating { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 38px; color: rgba(255,255,255,.8); font-size: .82rem; }
+    .rating-stars { color: #e0c382; letter-spacing: .12em; }
+    .rating-divider { width: 1px; height: 22px; background: rgba(255,255,255,.28); }
+    .hero-side { align-self: end; justify-self: end; width: min(100%, 365px); padding: 25px; border: 1px solid rgba(255,255,255,.22); border-radius: var(--radius); background: rgba(21,38,30,.55); box-shadow: 0 28px 80px rgba(0,0,0,.17); backdrop-filter: blur(16px); }
+    .hero-side-label { display: block; margin-bottom: 7px; color: #dcc89b; font-size: .67rem; font-weight: 700; letter-spacing: .17em; text-transform: uppercase; }
+    .hero-side h3 { margin-bottom: 9px; color: white; font-size: 1.7rem; }
+    .hero-side p { margin-bottom: 20px; color: rgba(255,255,255,.7); font-size: .88rem; }
+    .hero-side .btn { width: 100%; }
+    .hero-side .text-link { display: block; margin-top: 14px; color: rgba(255,255,255,.83); text-align: center; font-size: .82rem; font-weight: 600; }
+    .hero-bottom { position: relative; z-index: 2; display: flex; justify-content: space-between; align-items: center; gap: 20px; padding-top: 24px; border-top: 1px solid rgba(255,255,255,.17); color: rgba(255,255,255,.7); font-size: .76rem; }
+    .hero-bottom span { display: inline-flex; align-items: center; gap: 9px; }
+    .hero-bottom svg { width: 16px; height: 16px; color: #d5bd8a; }
+    /* Feature strip */
+    .feature-strip { position: relative; z-index: 4; margin-top: -1px; background: var(--paper); border-bottom: 1px solid var(--line); }
+    .feature-grid { display: grid; grid-template-columns: repeat(3,1fr); }
+    .feature-item { display: flex; align-items: center; gap: 16px; padding: 27px 25px; border-right: 1px solid var(--line); }
+    .feature-item:first-child { padding-left: 0; }
+    .feature-item:last-child { border-right: 0; }
+    .feature-icon { display: grid; place-items: center; width: 48px; height: 48px; flex: 0 0 auto; border-radius: 50%; background: #f1eee5; color: var(--gold-dark); }
+    .feature-icon svg { width: 23px; height: 23px; }
+    .feature-item strong { display: block; margin-bottom: 2px; font-size: .89rem; }
+    .feature-item span { display: block; color: var(--muted); font-size: .78rem; }
+    /* Intro */
+    .intro-grid { display: grid; grid-template-columns: 1fr .94fr; align-items: center; gap: clamp(45px, 8vw, 115px); }
+    .intro-copy .lead { margin-bottom: 25px; }
+    .intro-photo-wrap { position: relative; min-height: 495px; }
+    .intro-photo { position: absolute; inset: 0 34px 34px 0; overflow: hidden; border-radius: 180px 180px 18px 18px; background: #d3d1c6; }
+    .intro-photo img { width: 100%; height: 100%; object-fit: cover; }
+    .photo-note { position: absolute; right: 0; bottom: 0; display: flex; align-items: center; gap: 12px; max-width: 245px; padding: 20px 22px; border-radius: 15px; background: var(--pine); color: white; box-shadow: var(--shadow); }
+    .photo-note svg { width: 25px; height: 25px; flex: 0 0 auto; color: var(--gold); }
+    .photo-note strong { display: block; font-family: var(--serif); font-size: 1.06rem; font-weight: 500; line-height: 1.3; }
+    .photo-note span { display: block; margin-top: 3px; color: rgba(255,255,255,.68); font-size: .72rem; }
+    .check-list { display: grid; grid-template-columns: 1fr 1fr; gap: 13px 22px; margin: 26px 0 30px; padding: 0; list-style: none; }
+    .check-list li { display: flex; align-items: start; gap: 9px; color: #4a554d; font-size: .86rem; }
+    .check-list svg { width: 17px; height: 17px; flex: 0 0 auto; margin-top: 3px; color: var(--gold-dark); }
+    /* Stay and dining cards */
+    .experiences { background: #eeece4; }
+    .section-topline { display: flex; justify-content: space-between; align-items: end; gap: 28px; margin-bottom: 42px; }
+    .section-topline .section-heading { margin-bottom: 0; }
+    .experience-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+    .experience-card { overflow: hidden; border-radius: var(--radius); background: var(--paper); box-shadow: 0 8px 30px rgba(20,32,24,.045); }
+    .experience-image { position: relative; overflow: hidden; height: 310px; background: #d4d0c3; }
+    .experience-image::after { content: ''; position: absolute; inset: 40% 0 0; background: linear-gradient(transparent, rgba(14,26,19,.23)); }
+    .experience-image img { width: 100%; height: 100%; object-fit: cover; transition: transform .65s cubic-bezier(.2,.7,.2,1); }
+    .experience-card:hover .experience-image img { transform: scale(1.04); }
+    .experience-body { padding: 29px 31px 31px; }
+    .experience-body p { max-width: 495px; margin-bottom: 24px; color: var(--muted); font-size: .91rem; }
+    .card-kicker { margin-bottom: 11px; color: var(--gold-dark); font-size: .68rem; font-weight: 700; letter-spacing: .16em; text-transform: uppercase; }
+    .inline-link { display: inline-flex; align-items: center; gap: 9px; color: var(--pine); font-size: .85rem; font-weight: 700; }
+    .inline-link svg { width: 16px; height: 16px; transition: transform .2s ease; }
+    .inline-link:hover svg { transform: translateX(4px); }
+    /* Amenities */
+    .amenities-layout { display: grid; grid-template-columns: .82fr 1.18fr; gap: clamp(40px, 7vw, 90px); align-items: start; }
+    .amenity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+    .amenity { min-height: 178px; padding: 24px; border: 1px solid var(--line); border-radius: 17px; background: rgba(255,254,250,.55); }
+    .amenity-icon { display: grid; place-items: center; width: 42px; height: 42px; margin-bottom: 20px; border-radius: 12px; background: #eae5d9; color: var(--gold-dark); }
+    .amenity-icon svg { width: 22px; height: 22px; }
+    .amenity h3 { margin-bottom: 7px; font-family: var(--sans); font-size: .98rem; font-weight: 700; letter-spacing: -.01em; }
+    .amenity p { margin-bottom: 0; color: var(--muted); font-size: .82rem; }
+    .note-text { margin-top: 18px; color: var(--muted); font-size: .76rem; }
+    /* CTA band */
+    .cta-band { position: relative; overflow: hidden; background: var(--pine); color: white; }
+    .cta-band::before, .cta-band::after { content: ''; position: absolute; border: 1px solid rgba(196,166,109,.19); border-radius: 50%; pointer-events: none; }
+    .cta-band::before { width: 550px; height: 550px; top: -310px; right: -90px; }
+    .cta-band::after { width: 410px; height: 410px; top: -240px; right: -20px; }
+    .cta-inner { position: relative; display: flex; justify-content: space-between; align-items: center; gap: 32px; padding: 70px 0; }
+    .cta-inner .eyebrow { color: #d9c393; }
+    .cta-inner h2 { max-width: 640px; margin-bottom: 11px; color: white; }
+    .cta-inner p { max-width: 560px; margin-bottom: 0; color: rgba(255,255,255,.68); }
+    .cta-actions { display: flex; flex-wrap: wrap; gap: 11px; flex: 0 0 auto; }
+    /* Location */
+    .location-grid { display: grid; grid-template-columns: .85fr 1.15fr; gap: 30px; align-items: stretch; }
+    .location-card { padding: clamp(28px, 4vw, 45px); border-radius: var(--radius); background: var(--paper); box-shadow: 0 8px 30px rgba(20,32,24,.045); }
+    .location-card .lead { font-size: .95rem; }
+    .contact-line { display: grid; grid-template-columns: 42px 1fr; gap: 14px; margin: 28px 0; }
+    .contact-line + .contact-line { margin-top: 0; }
+    .contact-line-icon { display: grid; place-items: center; width: 42px; height: 42px; border-radius: 50%; background: #efede4; color: var(--gold-dark); }
+    .contact-line-icon svg { width: 19px; height: 19px; }
+    .contact-line small { display: block; margin-bottom: 4px; color: var(--muted); font-size: .69rem; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; }
+    .contact-line a, .contact-line address { color: var(--pine); font-size: .91rem; font-style: normal; font-weight: 600; }
+    .location-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 29px; }
+    .map-frame { min-height: 430px; overflow: hidden; border-radius: var(--radius); background: #e2e0d6; box-shadow: var(--shadow); }
+    .map-frame iframe { width: 100%; height: 100%; min-height: 430px; border: 0; filter: grayscale(15%) contrast(.96); }
+    /* FAQ */
+    .faq-section { padding-top: 20px; }
+    .faq-grid { display: grid; grid-template-columns: .8fr 1.2fr; gap: 70px; }
+    .faq-list { border-top: 1px solid var(--line); }
+    .faq-list details { border-bottom: 1px solid var(--line); }
+    .faq-list summary { display: flex; align-items: center; justify-content: space-between; gap: 18px; padding: 21px 0; cursor: pointer; list-style: none; font-size: .93rem; font-weight: 700; }
+    .faq-list summary::-webkit-details-marker { display: none; }
+    .faq-list summary::after { content: '+'; color: var(--gold-dark); font-size: 1.45rem; font-weight: 400; line-height: 1; }
+    .faq-list details[open] summary::after { content: '−'; }
+    .faq-list details p { max-width: 620px; margin: -4px 34px 22px 0; color: var(--muted); font-size: .87rem; }
+    /* Footer */
+    .site-footer { padding: 58px 0 24px; background: #111d18; color: white; }
+    .footer-top { display: flex; justify-content: space-between; gap: 35px; padding-bottom: 38px; border-bottom: 1px solid rgba(255,255,255,.15); }
+    .footer-brand { max-width: 380px; }
+    .footer-brand .brand-name { color: white; }
+    .footer-brand .brand-sub { color: rgba(255,255,255,.58); }
+    .footer-brand p { margin: 19px 0 0; color: rgba(255,255,255,.62); font-size: .85rem; }
+    .footer-nav { display: flex; flex-wrap: wrap; align-content: start; gap: 14px 23px; max-width: 420px; }
+    .footer-nav a { color: rgba(255,255,255,.77); font-size: .81rem; }
+    .footer-nav a:hover { color: #e0c382; }
+    .footer-bottom { display: flex; justify-content: space-between; gap: 20px; padding-top: 21px; color: rgba(255,255,255,.48); font-size: .72rem; }
+    .footer-bottom a { color: rgba(255,255,255,.7); }
+    .mobile-callbar { display: none; }
+    .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+    @media (max-width: 1000px) {
+      .nav-links { gap: 15px; }
+      .nav-links a { font-size: .77rem; }
+      .nav-cta { padding-inline: 15px; }
+      .hero-inner { grid-template-columns: 1fr .7fr; gap: 30px; }
+      .hero-side { padding: 21px; }
+      .section { padding: 88px 0; }
+      .amenities-layout { grid-template-columns: 1fr; }
+      .amenities-layout .section-heading { max-width: 680px; }
+      .faq-grid { gap: 42px; }
+    }
+    @media (max-width: 760px) {
+      .container { width: min(100% - 34px, var(--max)); }
+      .nav-wrap { min-height: 72px; }
+      .brand { min-width: auto; }
+      .brand-mark { width: 40px; height: 40px; }
+      .brand-name { font-size: .95rem; }
+      .brand-sub { font-size: .56rem; }
+      .menu-toggle { display: grid; margin-left: auto; }
+      .nav-cta { display: none; }
+      .nav-links { position: fixed; top: 72px; left: 0; right: 0; display: none; align-items: stretch; gap: 0; padding: 14px 22px 24px; border-bottom: 1px solid var(--line); background: var(--cream); box-shadow: 0 18px 30px rgba(0,0,0,.08); }
+      .nav-links.is-open { display: flex; flex-direction: column; }
+      .nav-links a { padding: 13px 0; border-bottom: 1px solid var(--line); font-size: .95rem; }
+      .nav-links a:last-child { border-bottom: 0; }
+      .hero { padding-top: 8px; }
+      .hero::before { background: linear-gradient(90deg, rgba(22,37,31,.98) 0%, rgba(22,37,31,.87) 55%, rgba(22,37,31,.65) 100%); }
+      .hero-photo { inset: 0; background-position: 52% center; opacity: .54; }
+      .hero-inner { display: flex; flex-direction: column; align-items: stretch; gap: 39px; min-height: auto; padding: 64px 0 48px; }
+      h1 { font-size: clamp(3rem, 13vw, 5rem); }
+      .hero-copy .lead { max-width: 510px; }
+      .hero-side { justify-self: stretch; align-self: stretch; width: 100%; max-width: 490px; }
+      .hero-bottom { flex-wrap: wrap; justify-content: start; gap: 14px 22px; padding-top: 20px; }
+      .feature-grid { grid-template-columns: 1fr; padding: 8px 0; }
+      .feature-item, .feature-item:first-child { padding: 17px 0; border-right: 0; border-bottom: 1px solid var(--line); }
+      .feature-item:last-child { border-bottom: 0; }
+      .feature-icon { width: 44px; height: 44px; }
+      .section { padding: 72px 0; }
+      .intro-grid, .experience-grid, .location-grid, .faq-grid { grid-template-columns: 1fr; }
+      .intro-grid { gap: 42px; }
+      .intro-photo-wrap { min-height: 420px; }
+      .intro-photo { inset: 0 23px 26px 0; border-radius: 145px 145px 15px 15px; }
+      .photo-note { padding: 16px 18px; }
+      .check-list { grid-template-columns: 1fr; gap: 11px; }
+      .section-topline { display: block; }
+      .section-topline > .btn { margin-top: 25px; }
+      .experience-image { height: 255px; }
+      .experience-body { padding: 25px 23px 27px; }
+      .amenity-grid { gap: 10px; }
+      .amenity { min-height: 165px; padding: 18px; }
+      .cta-inner { display: block; padding: 62px 0; }
+      .cta-actions { margin-top: 25px; }
+      .location-card { padding: 27px 23px; }
+      .map-frame, .map-frame iframe { min-height: 335px; }
+      .faq-grid { gap: 13px; }
+      .faq-section { padding-top: 0; }
+      .footer-top { flex-direction: column; }
+      .footer-bottom { flex-direction: column; gap: 8px; }
+      .mobile-callbar { position: fixed; z-index: 40; right: 12px; bottom: 12px; left: 12px; display: grid; grid-template-columns: 1fr 1.3fr; gap: 9px; padding: 8px; border: 1px solid rgba(255,255,255,.2); border-radius: 18px; background: rgba(22,37,31,.96); box-shadow: 0 15px 45px rgba(0,0,0,.24); backdrop-filter: blur(14px); }
+      .mobile-callbar .btn { min-height: 46px; padding: 10px 13px; font-size: .78rem; }
+      .site-footer { padding-bottom: 100px; }
+    }
+    @media (max-width: 420px) {
+      .hero-actions { align-items: stretch; flex-direction: column; }
+      .hero-actions .btn { width: 100%; }
+      .hero-rating { gap: 8px; font-size: .75rem; }
+      .rating-divider { display: none; }
+      .amenity-grid { grid-template-columns: 1fr 1fr; }
+      .amenity { padding: 15px; }
+      .amenity p { font-size: .76rem; }
+      .location-actions { flex-direction: column; }
+      .location-actions .btn { width: 100%; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after { transition-duration: .01ms !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; }
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Hotel",
+    "name": "Wood Villa Palace & Restaurant",
+    "telephone": "+91-98571-63033",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Near Visco Resort, Chadyara",
+      "addressLocality": "Mandi",
+      "addressRegion": "Himachal Pradesh",
+      "postalCode": "175001",
+      "addressCountry": "IN"
+    },
+    "description": "A stay and dining property in Chadyara, Mandi, Himachal Pradesh. Contact directly for room availability and restaurant enquiries."
+  }
+  </script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="#home" aria-label="Wood Villa Palace & Restaurant home">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" fill="none"><path d="M16 3.5 27.5 10v12L16 28.5 4.5 22V10L16 3.5Z" stroke="currentColor" stroke-width="1.2"/><path d="M10 21V13.5L16 18l6-4.5V21M16 18v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 9.5 16 14.7l7.5-5.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+        </span>
+        <span class="brand-copy"><span class="brand-name">Wood Villa Palace</span><span class="brand-sub">Stay · Dine · Unwind</span></span>
+      </a>
+      <nav class="nav-links" id="primaryNav" aria-label="Main navigation">
+        <a href="#stay">The Stay</a>
+        <a href="#dining">Restaurant</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#location">Location</a>
+        <a href="#faq">FAQs</a>
+      </nav>
+      <a class="btn btn-dark nav-cta" href="#enquiry">Enquire now <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-controls="primaryNav" aria-expanded="false"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-photo" aria-hidden="true"></div>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Chadyara · Mandi · Himachal Pradesh</p>
+          <h1>A warm welcome.<br /><em>A more memorable stay.</em></h1>
+          <p class="lead">Settle into your Mandi visit with a comfortable place to stay and a restaurant close at hand. Reach out directly for room availability, dining enquiries and local directions.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#enquiry">Plan your visit <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-outline" href="https://wa.me/919857163033?text=Hello%20Wood%20Villa%20Palace%20%26%20Restaurant%2C%20I%27d%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp us <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5Z" stroke-linejoin="round"/><path d="M8.7 8.1c.2-.4.4-.4.7-.4h.4c.1 0 .3 0 .4.3l.7 1.5c.1.2.1.4 0 .5l-.5.6c-.1.1-.2.3 0 .5.2.4.7 1 1.4 1.5.9.6 1.5.8 1.8.9.2.1.4 0 .5-.1l.7-.8c.2-.2.3-.2.5-.1l1.5.7c.2.1.3.2.3.4 0 .3-.2 1.1-.7 1.4-.4.4-1 .5-1.6.4-.6-.1-1.4-.4-2.3-.9-1.2-.6-2.2-1.7-2.8-2.5-.5-.7-1-1.6-1-2.2 0-.6.2-1.1.5-1.5Z" fill="currentColor" stroke="none"/></svg></a>
+          </div>
+          <div class="hero-rating"><span class="rating-stars" aria-label="4.4 out of 5 stars">★★★★★</span><span><strong>4.4/5</strong> on Google</span><span class="rating-divider" aria-hidden="true"></span><span>Near Visco Resort, Mandi</span></div>
+        </div>
+        <aside class="hero-side" aria-label="Direct enquiry">
+          <span class="hero-side-label">A direct line to us</span>
+          <h3>Make your plans simple.</h3>
+          <p>Ask about dates, room options, rates or restaurant availability. Our team can help you confirm the details before you arrive.</p>
+          <a class="btn btn-gold" href="tel:+919857163033"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M7 3h3l2 5-2 1.5a14 14 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10 19 5 14 4 5c0-1.1.9-2 2-2Z" stroke-linecap="round" stroke-linejoin="round"/></svg> Call +91 98571 63033</a>
+          <a class="text-link" href="#location">View location and directions ↗</a>
+        </aside>
+      </div>
+      <div class="container hero-bottom">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.3"/></svg> Chadyara, Mandi, Himachal Pradesh</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 20V9l8-5 8 5v11M8 20v-6h8v6M4 9h16" stroke-linecap="round" stroke-linejoin="round"/></svg> Stay and restaurant enquiries in one place</span>
+      </div>
+    </section>
+
+    <section class="feature-strip" aria-label="At a glance">
+      <div class="container feature-grid">
+        <div class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 20V9l9-5 9 5v11M7 20v-6h10v6M3 9h18" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Comfortable stays</strong><span>Ask about room options and dates</span></div></div>
+        <div class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 3v7a3 3 0 0 0 6 0V3M7 3v18M16 3c-2 2-3 4-3 7v2h4v9M17 3v9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Restaurant on site</strong><span>Contact the team for dining details</span></div></div>
+        <div class="feature-item"><span class="feature-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><strong>Direct contact</strong><span>Confirm details before you travel</span></div></div>
+      </div>
+    </section>
+
+    <section class="section" id="stay">
+      <div class="container intro-grid">
+        <div class="intro-copy">
+          <p class="eyebrow">Your base in Mandi</p>
+          <h2>Arrive, settle in, and enjoy the journey.</h2>
+          <p class="lead">Whether Mandi is a stop on your route or the start of a longer visit, Wood Villa Palace makes it easy to get in touch and plan ahead.</p>
+          <p>Tell us when you are arriving and what you need. We will help you check the available room options, rates and any details that matter for your stay.</p>
+          <ul class="check-list">
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round"/></svg>Direct room enquiries</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round"/></svg>Property location and directions</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round"/></svg>Ask about current rates</li>
+            <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m5 12 4 4L19 6" stroke-linecap="round" stroke-linejoin="round"/></svg>Restaurant availability enquiries</li>
+          </ul>
+          <a class="btn btn-dark" href="#enquiry">Check availability <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="intro-photo-wrap">
+          <div class="intro-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1100&q=85" alt="Warm, thoughtfully designed interior with natural textures" /></div>
+          <div class="photo-note"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="m12 3 2.5 5.5L20 11l-5.5 2.5L12 19l-2.5-5.5L4 11l5.5-2.5L12 3Z" stroke-linejoin="round"/><path d="m19 16 .9 2.1L22 19l-2.1.9L19 22l-.9-2.1L16 19l2.1-.9L19 16Z" stroke-linejoin="round"/></svg><div><strong>A thoughtful stop on your journey</strong><span>Wood Villa Palace · Mandi</span></div></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section experiences" id="dining">
+      <div class="container">
+        <div class="section-topline">
+          <div class="section-heading"><p class="eyebrow">Stay and dine</p><h2>Two reasons to make a stop.</h2><p class="lead">Find a place to rest and a restaurant to gather around. Contact us for the specifics, from room choices to the current menu and timings.</p></div>
+          <a class="btn btn-outline-dark" href="#enquiry">Make an enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+        </div>
+        <div class="experience-grid">
+          <article class="experience-card">
+            <div class="experience-image"><img loading="lazy" src="https://images.unsplash.com/photo-1611892440504-42a792e24d32?auto=format&fit=crop&w=1100&q=85" alt="Comfortable hotel room with a neatly made bed" /></div>
+            <div class="experience-body"><p class="card-kicker">Rest easy</p><h3>A stay that fits your plans.</h3><p>Let us know your dates, number of guests and room preferences. We can confirm which options are available and share the current rates directly.</p><a class="inline-link" href="#enquiry">Enquire about rooms <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+          </article>
+          <article class="experience-card">
+            <div class="experience-image"><img loading="lazy" src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1100&q=85" alt="Restaurant dining room with warm lighting and tables" /></div>
+            <div class="experience-body"><p class="card-kicker">Gather around</p><h3>Make room for a good meal.</h3><p>Planning lunch, dinner or a meal with a group? Contact the restaurant for the latest menu, service timings and table availability.</p><a class="inline-link" href="#enquiry" data-service="Restaurant enquiry">Ask about dining <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="amenities">
+      <div class="container amenities-layout">
+        <div class="section-heading"><p class="eyebrow">Useful comforts</p><h2>What you need, within reach.</h2><p class="lead">The public listing mentions core guest conveniences. For specific room facilities, food service and current availability, please check with the property before arrival.</p><a class="btn btn-outline-dark" href="tel:+919857163033">Confirm facilities <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a></div>
+        <div>
+          <div class="amenity-grid">
+            <article class="amenity"><span class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M5 9a10 10 0 0 1 14 0M8 12a6 6 0 0 1 8 0M11 15a2 2 0 0 1 2 0M12 19h.01" stroke-linecap="round"/></svg></span><h3>Wi-Fi</h3><p>Connectivity is listed among the property's guest conveniences.</p></article>
+            <article class="amenity"><span class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M4 3v7a3 3 0 0 0 6 0V3M7 3v18M16 3c-2 2-3 4-3 7v2h4v9M17 3v9" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Restaurant</h3><p>On-site dining is mentioned in public property listings.</p></article>
+            <article class="amenity"><span class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M3 11h18v9H3zM5 11V7a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v4M8 20v-4M16 20v-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Room service</h3><p>Ask the team which services apply to your selected room.</p></article>
+            <article class="amenity"><span class="amenity-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 22s8-4 8-11V5l-8-3-8 3v6c0 7 8 11 8 11Z" stroke-linecap="round" stroke-linejoin="round"/><path d="m9 12 2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><h3>Direct assistance</h3><p>Contact the property for arrival, booking and stay questions.</p></article>
+          </div>
+          <p class="note-text">Facilities can change. Please confirm the current services, room amenities and applicable charges directly with the property.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="cta-band" id="enquiry">
+      <div class="container cta-inner">
+        <div><p class="eyebrow">Start with a simple message</p><h2>Tell us what your visit needs.</h2><p>Share a few details below. Your enquiry will be prepared as a WhatsApp message to the property, so you can review and send it directly.</p></div>
+        <div class="cta-actions"><a class="btn btn-gold" href="#enquiry-form">Build an enquiry <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 12h14M13 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/></svg></a><a class="btn btn-outline" href="tel:+919857163033">Call the property</a></div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="enquiry-heading" id="enquiry-form-section">
+      <div class="container location-grid">
+        <div class="location-card">
+          <p class="eyebrow">Direct enquiry</p><h2 id="enquiry-heading">Let's plan your visit.</h2><p class="lead">No online payment is taken on this page. Send an enquiry, then confirm rates, availability and booking terms with the property.</p>
+          <form id="enquiryForm">
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px">
+              <label style="display:block;font-size:.78rem;font-weight:700;color:#39453d">I am enquiring about
+                <select id="service" name="service" required style="display:block;width:100%;margin-top:7px;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fffefa;color:var(--ink)">
+                  <option value="Room booking">Room booking</option><option value="Restaurant enquiry">Restaurant enquiry</option><option value="Stay and dining">Stay and dining</option><option value="General enquiry">General enquiry</option>
+                </select>
+              </label>
+              <label style="display:block;font-size:.78rem;font-weight:700;color:#39453d">Number of guests
+                <select id="guests" name="guests" style="display:block;width:100%;margin-top:7px;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fffefa;color:var(--ink)">
+                  <option>1 guest</option><option selected>2 guests</option><option>3 guests</option><option>4 guests</option><option>5+ guests</option><option>Group / event</option>
+                </select>
+              </label>
+            </div>
+            <div style="display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:14px" id="datesRow">
+              <label style="display:block;font-size:.78rem;font-weight:700;color:#39453d">Arrival date
+                <input type="date" id="arrival" name="arrival" style="display:block;width:100%;margin-top:7px;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fffefa;color:var(--ink)" />
+              </label>
+              <label style="display:block;font-size:.78rem;font-weight:700;color:#39453d">Departure date
+                <input type="date" id="departure" name="departure" style="display:block;width:100%;margin-top:7px;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fffefa;color:var(--ink)" />
+              </label>
+            </div>
+            <label style="display:block;margin-bottom:14px;font-size:.78rem;font-weight:700;color:#39453d">Your name (optional)
+              <input type="text" id="guestName" name="guestName" placeholder="Enter your name" autocomplete="name" style="display:block;width:100%;margin-top:7px;min-height:48px;padding:10px 12px;border:1px solid var(--line);border-radius:10px;background:#fffefa;color:var(--ink)" />
+            </label>
+            <label style="display:block;margin-bottom:20px;font-size:.78rem;font-weight:700;color:#39453d">Anything else we should know? (optional)
+              <textarea id="message" name="message" rows="3" placeholder="For example, preferred room setup or dining time" style="display:block;width:100%;margin-top:7px;padding:12px;border:1px solid var(--line);border-radius:10px;background:#fffefa;color:var(--ink);resize:vertical"></textarea>
+            </label>
+            <button class="btn btn-dark" type="submit" style="width:100%">Continue to WhatsApp <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M20 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-4.2A8.5 8.5 0 1 1 20 11.5Z" stroke-linejoin="round"/><path d="M8.7 8.1c.2-.4.4-.4.7-.4h.4c.1 0 .3 0 .4.3l.7 1.5c.1.2.1.4 0 .5l-.5.6c-.1.1-.2.3 0 .5.2.4.7 1 1.4 1.5.9.6 1.5.8 1.8.9.2.1.4 0 .5-.1l.7-.8c.2-.2.3-.2.5-.1l1.5.7c.2.1.3.2.3.4 0 .3-.2 1.1-.7 1.4-.4.4-1 .5-1.6.4-.6-.1-1.4-.4-2.3-.9-1.2-.6-2.2-1.7-2.8-2.5-.5-.7-1-1.6-1-2.2 0-.6.2-1.1.5-1.5Z" fill="currentColor" stroke="none"/></svg></button>
+            <p id="formStatus" role="status" aria-live="polite" style="margin:12px 0 0;color:var(--muted);font-size:.76rem"></p>
+          </form>
+        </div>
+        <div class="location-card" id="location">
+          <p class="eyebrow">Find us</p><h2>Easy to find in Mandi.</h2><p class="lead">Use the directions link to open the location in Google Maps before setting off.</p>
+          <div class="contact-line"><span class="contact-line-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.3"/></svg></span><div><small>Address</small><address>Near Visco Resort, Chadyara,<br />Mandi, Himachal Pradesh 175001, India</address></div></div>
+          <div class="contact-line"><span class="contact-line-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M7 3h3l2 5-2 1.5a14 14 0 0 0 4.5 4.5L16 12l5 2v3c0 1.1-.9 2-2 2C10 19 5 14 4 5c0-1.1.9-2 2-2Z" stroke-linecap="round" stroke-linejoin="round"/></svg></span><div><small>Phone / WhatsApp</small><a href="tel:+919857163033">+91 98571 63033</a></div></div>
+          <div class="location-actions"><a class="btn btn-dark" href="https://www.google.com/maps/search/?api=1&query=Wood%20Villa%20Palace%20Homestay%2C%20Near%20Visco%20Resort%2C%20Chadyara%2C%20Mandi%2C%20Himachal%20Pradesh%20175001" target="_blank" rel="noopener">Get directions <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 3 21 12l-9 9-9-9 9-9Z" stroke-linejoin="round"/><path d="M12 7v10m-5-5h10" stroke-linecap="round"/></svg></a><a class="btn btn-outline-dark" href="https://wa.me/919857163033?text=Hello%20Wood%20Villa%20Palace%2C%20please%20share%20your%20location%20and%20directions." target="_blank" rel="noopener">Ask on WhatsApp</a></div>
+          <div class="map-frame" style="margin-top:28px"><iframe title="Map showing Wood Villa Palace in Chadyara, Mandi" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Wood%20Villa%20Palace%20Homestay%2C%20Near%20Visco%20Resort%2C%20Chadyara%2C%20Mandi%2C%20Himachal%20Pradesh&output=embed"></iframe></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="container faq-grid">
+        <div class="section-heading"><p class="eyebrow">Good to know</p><h2>Before you arrive.</h2><p class="lead">Quick answers to the most common planning questions. For anything specific, contact the property directly.</p></div>
+        <div class="faq-list">
+          <details><summary>How do I check room prices and availability?</summary><p>Call or WhatsApp +91 98571 63033 with your dates and number of guests. Rates and available room types should be confirmed directly with the property.</p></details>
+          <details><summary>Can I enquire about the restaurant separately?</summary><p>Yes. Choose “Restaurant enquiry” in the form and ask the team about current menu options, timings and table availability.</p></details>
+          <details><summary>Is Wi-Fi available?</summary><p>Wi-Fi is mentioned among the public listing's amenities. Please confirm the current availability and any details with the property before your stay.</p></details>
+          <details><summary>Where is Wood Villa Palace located?</summary><p>The published address is near Visco Resort, Chadyara, Mandi, Himachal Pradesh 175001. Use the directions button above to open Google Maps.</p></details>
+          <details><summary>Can I book directly through this website?</summary><p>This website prepares a message for WhatsApp; it does not take payment or confirm a reservation. Your booking is only confirmed after the property replies and agrees the details with you.</p></details>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a class="brand" href="#home"><span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M16 3.5 27.5 10v12L16 28.5 4.5 22V10L16 3.5Z" stroke="currentColor" stroke-width="1.2"/><path d="M10 21V13.5L16 18l6-4.5V21M16 18v6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/><path d="M8.5 9.5 16 14.7l7.5-5.2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg></span><span class="brand-copy"><span class="brand-name">Wood Villa Palace</span><span class="brand-sub">Stay · Dine · Unwind</span></span></a>
+          <p>A welcoming base for your time in Mandi. Contact us directly to confirm the details that will make your visit comfortable.</p>
+        </div>
+        <nav class="footer-nav" aria-label="Footer navigation"><a href="#stay">The Stay</a><a href="#dining">Restaurant</a><a href="#amenities">Amenities</a><a href="#location">Location</a><a href="#faq">FAQs</a><a href="tel:+919857163033">Call the property</a><a href="https://wa.me/919857163033" target="_blank" rel="noopener">WhatsApp</a></nav>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year">2026</span> Wood Villa Palace & Restaurant. All rights reserved.</span><span>Near Visco Resort, Chadyara, Mandi, Himachal Pradesh · <a href="#home">Back to top ↑</a></span></div>
+    </div>
+  </footer>
+
+  <div class="mobile-callbar" aria-label="Quick contact actions"><a class="btn btn-outline" href="tel:+919857163033">Call now</a><a class="btn btn-gold" href="https://wa.me/919857163033?text=Hello%20Wood%20Villa%20Palace%2C%20I%27d%20like%20to%20enquire." target="_blank" rel="noopener">WhatsApp enquiry</a></div>
+
+  <script>
+    (function () {
+      const menuToggle = document.getElementById('menuToggle');
+      const nav = document.getElementById('primaryNav');
+      if (menuToggle && nav) {
+        menuToggle.addEventListener('click', function () {
+          const isOpen = nav.classList.toggle('is-open');
+          menuToggle.setAttribute('aria-expanded', String(isOpen));
+          menuToggle.setAttribute('aria-label', isOpen ? 'Close navigation menu' : 'Open navigation menu');
+          document.body.classList.toggle('menu-open', isOpen);
+        });
+        nav.querySelectorAll('a').forEach(function (link) {
+          link.addEventListener('click', function () {
+            nav.classList.remove('is-open');
+            menuToggle.setAttribute('aria-expanded', 'false');
+            menuToggle.setAttribute('aria-label', 'Open navigation menu');
+            document.body.classList.remove('menu-open');
+          });
+        });
+      }
+
+      const arrival = document.getElementById('arrival');
+      const departure = document.getElementById('departure');
+      const today = new Date();
+      const localDate = new Date(today.getTime() - today.getTimezoneOffset() * 60000).toISOString().slice(0, 10);
+      if (arrival) arrival.min = localDate;
+      if (departure) departure.min = localDate;
+      if (arrival && departure) {
+        arrival.addEventListener('change', function () {
+          if (arrival.value) {
+            departure.min = arrival.value;
+            if (departure.value && departure.value < arrival.value) departure.value = '';
+          } else {
+            departure.min = localDate;
+          }
+        });
+      }
+
+      const serviceSelect = document.getElementById('service');
+      const datesRow = document.getElementById('datesRow');
+      function updateDateFields() {
+        if (!serviceSelect || !datesRow) return;
+        const service = serviceSelect.value;
+        const isStay = service === 'Room booking' || service === 'Stay and dining';
+        datesRow.style.opacity = isStay ? '1' : '.72';
+        arrival.required = isStay;
+        departure.required = isStay;
+        arrival.setAttribute('aria-required', String(isStay));
+        departure.setAttribute('aria-required', String(isStay));
+      }
+      if (serviceSelect) {
+        serviceSelect.addEventListener('change', updateDateFields);
+        updateDateFields();
+      }
+
+      const form = document.getElementById('enquiryForm');
+      const status = document.getElementById('formStatus');
+      if (form) {
+        form.addEventListener('submit', function (event) {
+          event.preventDefault();
+          const service = document.getElementById('service').value;
+          const guests = document.getElementById('guests').value;
+          const name = document.getElementById('guestName').value.trim();
+          const arrivalValue = arrival.value;
+          const departureValue = departure.value;
+          const message = document.getElementById('message').value.trim();
+          const isStay = service === 'Room booking' || service === 'Stay and dining';
+          if (isStay && (!arrivalValue || !departureValue)) {
+            status.textContent = 'Please select arrival and departure dates for a stay enquiry.';
+            (!arrivalValue ? arrival : departure).focus();
+            return;
+          }
+          if (arrivalValue && departureValue && departureValue < arrivalValue) {
+            status.textContent = 'Departure date must be the same as or later than arrival date.';
+            departure.focus();
+            return;
+          }
+          const lines = [
+            'Hello Wood Villa Palace & Restaurant,',
+            '',
+            'I would like to make an enquiry.',
+            'Enquiry type: ' + service,
+            'Guests: ' + guests
+          ];
+          if (arrivalValue) lines.push('Arrival: ' + arrivalValue);
+          if (departureValue) lines.push('Departure: ' + departureValue);
+          if (name) lines.push('Name: ' + name);
+          if (message) lines.push('Additional details: ' + message);
+          lines.push('', 'Please share availability, current rates and any relevant details. Thank you.');
+          const url = 'https://wa.me/919857163033?text=' + encodeURIComponent(lines.join('\n'));
+          status.textContent = 'Opening WhatsApp with your enquiry. Review the message and press Send to contact the property.';
+          window.open(url, '_blank', 'noopener,noreferrer');
+        });
+      }
+
+      document.querySelectorAll('[data-service]').forEach(function (link) {
+        link.addEventListener('click', function () {
+          const chosen = document.getElementById('service');
+          if (chosen) chosen.value = link.getAttribute('data-service');
+          updateDateFields();
+        });
+      });
+      document.getElementById('year').textContent = new Date().getFullYear();
+    })();
+  </script>
+</body>
+</html>
